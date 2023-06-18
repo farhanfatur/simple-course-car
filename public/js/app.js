@@ -2066,7 +2066,10 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 (0,tw_elements__WEBPACK_IMPORTED_MODULE_0__.initTE)({
+  Alert: tw_elements__WEBPACK_IMPORTED_MODULE_0__.Alert,
   Collapse: tw_elements__WEBPACK_IMPORTED_MODULE_0__.Collapse,
+  Modal: tw_elements__WEBPACK_IMPORTED_MODULE_0__.Modal,
+  Ripple: tw_elements__WEBPACK_IMPORTED_MODULE_0__.Ripple,
   Dropdown: tw_elements__WEBPACK_IMPORTED_MODULE_0__.Dropdown,
   Datepicker: tw_elements__WEBPACK_IMPORTED_MODULE_0__.Datepicker,
   Input: tw_elements__WEBPACK_IMPORTED_MODULE_0__.Input

@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-        <title>Simple Course Car</title>
+        <title>Simple Streaming Video</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -56,7 +57,7 @@
       id="navbarSupportedContent4"
       data-te-collapse-item>
       <!-- Navbar title -->
-      <a class="pr-2 text-xl font-semibold text-white" href="#">SImple Course Car</a>
+      <a class="pr-2 text-xl font-semibold text-white" href="/">Simple Streaming Video</a>
       <!-- Left navigation links -->
       <ul
         class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row"
@@ -65,27 +66,9 @@
         <li class="my-4 lg:my-0 lg:pr-2" data-te-nav-item-ref>
           <a
             class="text-white disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-            href="#"
+            href="/assets"
             data-te-nav-link-ref
-            >Menu 1</a
-          >
-        </li>
-        <!-- Team link -->
-        <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-          <a
-            class="p-0 text-white opacity-60 hover:opacity-80 focus:opacity-80 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-            href="#"
-            data-te-nav-link-ref
-            >Menu 2</a
-          >
-        </li>
-        <!-- Projects link -->
-        <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-          <a
-            class="p-0 text-white opacity-60 hover:opacity-80 focus:opacity-80 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-            href="#"
-            data-te-nav-link-ref
-            >Menu 3</a
+            >Video Menu</a
           >
         </li>
       </ul>
@@ -225,6 +208,11 @@
     <!-- Right elements -->
   </div>
 </nav>
+    <div class="md:container mx-auto px-2">
+      @yield("content")
+    </div>
     </body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
+    @yield("javascript")
 </html>
